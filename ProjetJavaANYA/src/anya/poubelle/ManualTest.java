@@ -14,15 +14,8 @@ public class ManualTest {
 
         // Création de la poubelle intelligente
         PoubelleIntelligente poubelle = new PoubelleIntelligente(48.90058, 2.07033, centreDeTri);
-        System.out.println("Poubelle intelligente créée à la position : (" + poubelle.getCoordonnees() + ")");
-        
-        // Ajout de la poubelle au centre de tri
-        try {
-            centreDeTri.ajouterPoubelle(poubelle);
-            System.out.println("Poubelle ajoutée au centre de tri.");
-        } catch (Exception e) {
-            System.out.println("Erreur lors de l'ajout de la poubelle au centre de tri : " + e.getMessage());
-        }
+        System.out.println("Poubelle intelligente créée à la position : (" + poubelle.toStringCoordonnees() + ")");
+        centreDeTri.setPointsPourCouleur(CouleurBac.VERTE, 10.0);
 
         // Création d'un commerce partenaire potentiel
         Commerce supermarche = new Commerce("Carrefour");
@@ -105,7 +98,7 @@ public class ManualTest {
             System.out.println("Erreur lors de la consultation ou de la réclamation des bons d'achat : " + e.getMessage());
         }
         
-        System.out.println("Avant la réclamation, le nombre de points de fidélités de l'utilisateur est " + user.getPointsFidelite() + " points.");
+        System.out.println("Après la réclamation, le nombre de points de fidélités de l'utilisateur est " + user.getPointsFidelite() + " points.");
 
 
         System.out.println("Fin du test manuel.");
