@@ -12,6 +12,8 @@ public class CentreDeTri {
     private ArrayList<Utilisateur> utilisateurs = new ArrayList<Utilisateur>();
     private ArrayList<PoubelleIntelligente> poubelles = new ArrayList<PoubelleIntelligente>();
     private ArrayList<Commerce> partenairesPotentiels = new ArrayList<Commerce>();
+    private HashMap<CouleurBac, Double> pointsParCouleur = new HashMap<>(); // Initialize here
+
 	
 	public CentreDeTri(String nom) {
 		this.nom = nom;
@@ -46,13 +48,15 @@ public class CentreDeTri {
 		}
 	}
 	
+	public void setPointsPourCouleur(CouleurBac couleur, Double points) {
+		this.pointsParCouleur.put(couleur, points);
+	}
+	
 	public double demanderScoreParUnite(CouleurBac couleur, boolean success) {
-		//la couleur est une enum, demandez la moi	
-		//demerdesen sich tant qu'il donne un score négatif pour le success == false et un score positif pour le success = true
 		if (success) {
-			return 10;
+			return this.pointsParCouleur.get(couleur);
 		} else {
-			return -10;
+			return (-1) * this.pointsParCouleur.get(couleur);
 		}
 	}
 	public ArrayList<BonAchat> consulterBonsAchatsDisponibles(int iMin, int iMax) {
