@@ -1,0 +1,18 @@
+type;col1;col2;col3;col4
+CentreDeTri;Centre De Tri De Saint-Germain-En-Laye;;;;
+Utilisateur;Yassine;120;1500;200;
+Commerce;Carrefour;;;;
+Commerce;Ikea;;;;
+Commerce;Lidl;;;;
+BonAchat;300.0;50.0;2024-12-31;Electronique
+BonAchat;400.0;100.0;2025-01-02;Alimentaire
+BonAchat;400.0;100.0;2026-06-14;Electronique
+PoubelleIntelligente;48.8566;2.3522;Poubelle du coin de la rue;;
+PoubelleIntelligente;48.8566;2.2945;Poubelle de l'IEP;;
+PoubelleIntelligente;48.8566;2.3750;Poubelle de là-bas;;
+Dechet;10;plastique;;;
+Dechet;20;verre;;;
+Dechet;30;papier;;;
+Dechet;40;conserve;;;
+Dechet;50;autre;;;
+
