@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/1smnLAVEENJcM9v4IavZzpxbw-FcDBNy2gZx9s2MirjY/edit?usp=sharing
+
 Lire le ManualTest.java dont voilà les deux sorties possibles (pour rappel, la reconnaissance de déchets est simulée comme imparfaite, donc avec un facteur aléatoire).
 
 ```
